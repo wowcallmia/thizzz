@@ -9,7 +9,6 @@
   justify-content: center;
   align-items: flex-end;
 }
-
 .homepage {
   @extend .flex-center;
   flex-direction: column;
@@ -27,6 +26,7 @@
     width: 1700px;
     height: 150px;
     background-color: green;
+    margin-top: 15px;
   }
   & .silly3{
     width: 200px;
