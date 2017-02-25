@@ -9,7 +9,7 @@
   "repository": "https://github.com/wowcallmia/thizzz.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "if test \"$NODE_ENV\" = \"production\" ; then npm run start-dev; else npm run start-dev; fi ",
+    "start": "if test \"$NODE_ENV\" = \"production\" ; then npm run start-prod; else npm run start-dev; fi ",
     "start-dev": "npm run open:dev",
     "start-prod": "babel-node ./tools/distServer.js",
     "open:dev": "babel-watch ./server/server.js",
@@ -58,7 +58,10 @@
     "postcss-loader": "^0.13.0",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7"
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-middleware": "^1.8.3",
+    "webpack-hot-middleware": "^2.12.2"
   },
   "dependencies": {
     "apisauce": "^0.5.0",
