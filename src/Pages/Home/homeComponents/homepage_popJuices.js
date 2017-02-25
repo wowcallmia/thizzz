@@ -21,7 +21,6 @@ class HomepagePopJuices extends PureComponent {
   render() {
     return (
       <div className="homepage-juices">
-        <div className='silly1'></div>
         <h1 className="homepage-juices-title">TRENDING BAY AREA ARTISTS</h1>
         <div className='silly'>Updated weekly</div>
         <div className="homepage-juices-grid-parent">
