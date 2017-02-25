@@ -1,0 +1,24 @@
+@import "../../navbarTypography";
+@import "./navbarCart_mainButton";
+@import "./navbarCart_dropdnContent";
+
+.navbar.actionSection.upper {
+  &.mycart-container {
+    @extend .flex-center;
+    & .mycart-main {
+      display: inline-block;
+      position: relative;
+      float: right;
+      width: 16em;
+      height: 4em;
+      background-color: $p-red;
+      &:hover,
+      &:active,
+      &:focus {
+        & .dropdown-content {
+          display: block;
+        }
+      }
+    }
+  }
+}

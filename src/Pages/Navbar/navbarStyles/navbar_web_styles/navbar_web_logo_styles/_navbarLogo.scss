@@ -1,0 +1,14 @@
+// @import "../../../../../Styles/images";
+.navbar.logoContainer {
+  max-width: 22em;
+  height: 10em;
+  padding-right: 2.5em;
+}
+.navbar.navbar-logo {
+  height: 10em;
+  width: 10em;
+  max-width: 22em;
+  background-image: $main-logo;
+  // background-image: url('./Images/nj2jp-main-logo.png');
+  background-size: cover;
+}

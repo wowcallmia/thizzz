@@ -1,0 +1,13 @@
+@import "./navbarUserActions_signedIn";
+@import "./navbarUserActions_notSignedIn";
+
+.navbar-actionSection-upper-actions {
+  @extend .flex-right;
+  @extend .white-bg;
+  width: 45em;
+  height: 4em;
+  text-align: center;
+}
+.navbar-actionSection-upper-options {
+  @extend .flex-center;
+}

@@ -1,0 +1,106 @@
+.homepage-juices {
+  @extend .flex-center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 5em 0;
+  background-color: $p-white;
+  & .homepage-juices-title {
+    color: $p-blue;
+    line-height: 2.28em;
+    margin: .8em;
+  }
+  & .homepage-juices-grid-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    margin: 0 6em;
+    padding: 0;
+    background-color: $p-white;
+    & .homepage-juices-grid-card-parent {
+      @extend .flex-center;
+      flex-direction: row;
+      height: 45em;
+      width: 39em;
+      margin: 2.5em;
+      background-color: $p-white;
+      @include prefixed(box-shadow, 5px 5px 4px rgba(1,1,1,.25));
+      & .homepage-juices-grid-card-image {
+        content: '';
+        width: 25em;
+        height: 25em;
+        background-color: black;
+      }
+      & .homepage-juices-grid-card-desc-parent {
+        height: 17em;
+        width: 24em;
+        padding: .5em;
+        background-color: $p-white;
+        & .homepage-juices-grid-card-desc-title {
+          width: 11.3;
+          color: #F26122;
+          line-height: 2.4em;
+        }
+        & .homepage-juices-grid-card-desc-price {
+          height: 3.5em;
+          & .homepage-juices-grid-card-desc-price-title {
+            height: 1.16em;
+            color: $p-red;
+            font-size: 2em;
+            line-height: 1.33em;
+          }
+          & .homepage-juices-grid-card-desc-price-tax {
+            font-size: 11px;
+            height: 3em;
+            font-family: $p-font;
+            padding-top: 15px;
+            color: $s-grey;
+            text-transform: capitalize;
+          }
+        }
+        & .homepage-juices-grid-card-desc-shipping {
+          height: 2.5em;
+          width: 24em;
+          & p {
+            color: $p-red;
+            font-size: 1.3em;
+          }
+        }
+        & .homepage-juices-grid-card-desc-nicotine-title {
+          display: flex;
+          align-items: flex-end;
+          height: 1.5em;
+          width: 12em;
+          font-family: $p-font;
+          font-size: 1em;
+          color: $s-grey;
+        }
+        & .homepage-juices-grid-card-desc-nicotine-options {
+          height: 4em;
+          width: 23em;
+          & .homepage-juices-grid-card-desc-nicotine-options-list {
+            display: flex;
+            justify-content: space-between;
+            padding: .5em 0 0 .5em;
+            margin: 0;
+            list-style-type: none;
+            & .homepage-juices-grid-card-desc-nicotine-options-2mg,
+            .homepage-juices-grid-card-desc-nicotine-options-4mg,
+            .homepage-juices-grid-card-desc-nicotine-options-6mg,
+            .homepage-juices-grid-card-desc-nicotine-options-8mg {
+              border-right: 1px solid rgba(1,1,1,.2);
+              padding: 0 10px;
+              font-size: 2em;
+              font-family: $p-font;
+              color: $s-grey;
+            }
+            & .homepage-juices-grid-card-desc-nicotine-options-8mg {
+              border-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

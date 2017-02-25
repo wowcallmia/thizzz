@@ -1,0 +1,9 @@
+@import "./mobile_navbar_UserActions_signedIn";
+@import "./mobile_navbar_UserActions_notSignedIn";
+
+.navbar-mobile-actions {
+  @extend .mobile-flex-center;
+  @extend .mobile-white-bg;
+  width: 40em;
+  height: 4em;
+}
